@@ -2,6 +2,8 @@
 
 A retrieval-augmented generation system for studying how citation grounding, structured outputs, and refusal policies reduce unsupported LLM claims.
 
+![Hallucination-Controlled RAG UI](assets/hero.png)
+
 ## Overview
 This repository packages a complete RAG experiment around a simple but important question: how do you make an LLM answer only when it has evidence, and refuse when it does not?
 
@@ -221,6 +223,8 @@ The web interface supports:
 - document upload for local corpus replacement
 - citation inspection
 
+![Web UI](assets/hero.png)
+
 ## Evaluation Framework
 The benchmark contains 60 questions total:
 
@@ -266,14 +270,25 @@ See:
 - [examples/queries/grounded_query.md](/c:/Users/ANISH%20PC/Desktop/RAG/rag-hallucination-study/examples/queries/grounded_query.md)
 - [examples/outputs/grounded_rag_answer.json](/c:/Users/ANISH%20PC/Desktop/RAG/rag-hallucination-study/examples/outputs/grounded_rag_answer.json)
 
+![Grounded answer](assets/grounded-1.png)
+
+![Grounded citations and structured output](assets/grounded-2.png)
+
 ### Refusal when evidence is insufficient
 See:
 - [examples/queries/refusal_query.md](/c:/Users/ANISH%20PC/Desktop/RAG/rag-hallucination-study/examples/queries/refusal_query.md)
 - [examples/outputs/refusal_rag_answer.json](/c:/Users/ANISH%20PC/Desktop/RAG/rag-hallucination-study/examples/outputs/refusal_rag_answer.json)
 
+![Refusal example](assets/refusal.png)
+
 ### Naive hallucination vs corrected RAG behavior
 See:
 - [examples/outputs/naive_vs_rag_comparison.md](/c:/Users/ANISH%20PC/Desktop/RAG/rag-hallucination-study/examples/outputs/naive_vs_rag_comparison.md)
+
+### Uploading a new document set
+The web interface also supports replacing the local corpus with uploaded `.md` or `.txt` files and rebuilding the local index.
+
+![Upload documents UI](assets/upload-2.png)
 
 ## Engineering Decisions
 ### Why RAG?
