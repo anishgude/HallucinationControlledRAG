@@ -1,0 +1,13 @@
+.env
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local vector index artifacts can be regenerated.
+data/vector_store/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

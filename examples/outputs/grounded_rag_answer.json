@@ -1,0 +1,11 @@
+{
+  "final_answer": "The default admin IP for the AetherX AX-200 router is 192.168.1.1.",
+  "cited_chunks": [
+    {
+      "quote": "Model: AX-200\n\n- Default admin IP is 192.168.1.1.\n- Factory reset requires holding the reset pin for 12 seconds.\n- The status LED is solid blue when connected, blinking amber during firmware update.\n- Supports Wi-Fi 6 on 2.4 GHz and 5 GHz bands.",
+      "doc_id": "manual_router",
+      "offset": "lines 1-7"
+    }
+  ],
+  "refused": false
+}
